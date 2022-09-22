@@ -33,4 +33,16 @@
 
 - 做完以上步骤，那么你就可以直接运行**index.py**
 
+- apiKey和secretKey需要你自己拥有，在[百度AI上色](https://ai.baidu.com/tech/imageprocess/colourize)中获取（这是一年免费且有1000次），
+
+- 获取apiKey和secretKey后在index.py中找到apiKey和secretKey粘贴 **（注意奥！这两个Key是不一样的，别搞混了）**
+
+# 更新
+
+新增用前须知
+
+![用前须知](./doc/Snipaste_2022-09-22_18-58-32.png)
+
+[已经在gitee发布](https://gitee.com/mcheping/image-color)
+
 让老照片不再灰白

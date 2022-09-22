@@ -2,9 +2,15 @@ import tkinter as tk
 from tkinter import filedialog,messagebox
 from tkinter import *
 from PIL import ImageTk,Image
+import easygui
 import requests
 import base64
 import os
+
+easygui.msgbox("注意！代码已经开源！开源就意味着免费！禁止盗卖！"
+               + '\n' +
+               "在浏览器中访问：https://github.com/mcheping520/image-color"
+               )
 
 def resize(w,h,newW,newH,pilPicture):
     f1 = 1.0 * newW / w
@@ -25,8 +31,8 @@ def showPhoto(route,xPos,yPos):
     photoLabel.place(x=xPos,y=yPos)
     window.mainloop()
 
-apiKey = 'YOUR-KEY'
-secretKey = 'YOUR-KEY'
+apiKey = '在百度获取：https://ai.baidu.com/tech/imageprocess/colourize'
+secretKey = '在百度获取：https://ai.baidu.com/tech/imageprocess/colourize'
 def getToken():
     getTokenUrl = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id='+apiKey+'&client_secret='+secretKey
     response = requests.get(getTokenUrl)
